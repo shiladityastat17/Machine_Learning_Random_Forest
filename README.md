@@ -19,8 +19,8 @@
 <div id="header">
 <h1 class="title">Predict activity quality from activity monitors</h1>
 <h4 class="author"><em>Shiladitya Bose</em></h4>
-<h4 class="date"><em><ol start="24" style="list-style-type: decimal">
-<li>January 2015</li>
+<h4 class="date"><em><ol start="12" style="list-style-type: decimal">
+<li>May 2021</li>
 </ol></em></h4>
 </div>
 
