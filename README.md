@@ -8,24 +8,10 @@
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="generator" content="pandoc" />
 
-<meta name="author" content="Onur Akpolat" />
+<meta name="author" content="Shiladitya Bose" />
 
 
-<title>Predict activity quality from activity monitors</title>
 
-<script src="data:application/x-javascript/>
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<link href="data:text/css/>
-<link href="data:text/css/>
-<script src="data:application/x-javascript/>
-<style type="text/css">code{white-space: pre;}</style>
-<link href="data:text/css/>
-<script src="data:application/x-javascript/>
-<style type="text/css">
-  pre:not([class]) {
-    background-color: white;
-  }
-</style>
 <script type="text/javascript">
 if (window.hljs && document.readyState && document.readyState === "complete") {
    window.setTimeout(function() {
@@ -52,7 +38,7 @@ if (window.hljs && document.readyState && document.readyState === "complete") {
 
 <div id="header">
 <h1 class="title">Predict activity quality from activity monitors</h1>
-<h4 class="author"><em>Onur Akpolat</em></h4>
+<h4 class="author"><em>Shiladitya Bose</em></h4>
 <h4 class="date"><em><ol start="24" style="list-style-type: decimal">
 <li>January 2015</li>
 </ol></em></h4>
