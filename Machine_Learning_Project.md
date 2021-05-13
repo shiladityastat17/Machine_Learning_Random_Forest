@@ -138,7 +138,6 @@ subTesting &lt;- training[-subSamples, ]</code></pre>
 <pre class="r"><code># Fit model
 modFitDT &lt;- rpart(classe ~ ., data=subTraining, method=&quot;class&quot;)
 
-
 #Perform prediction
 predictDT &lt;- predict(modFitDT, subTesting, type = &quot;class&quot;)
 
@@ -185,7 +184,7 @@ rpart.plot(modFitDT, main=&quot;Classification Tree&quot;, extra=102, under=TRUE
 <pre class="r"><code># Fit model
 modFitRF &lt;- randomForest(classe ~ ., data=subTraining, method=&quot;class&quot;)
 
-# Perform prediction
+#Perform prediction
 predictRF &lt;- predict(modFitRF, subTesting, type = &quot;class&quot;)</code></pre>
 <p>Following confusion matrix shows the errors of the prediction algorithm.</p>
 <pre class="r"><code>confusionMatrix(predictRF, subTesting$classe)</code></pre>
