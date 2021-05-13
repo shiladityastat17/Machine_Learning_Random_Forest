@@ -140,11 +140,11 @@ modFitDT &lt;- rpart(classe ~ ., data=subTraining, method=&quot;class&quot;)
 
 #Perform prediction
 predictDT &lt;- predict(modFitDT, subTesting, type = &quot;class&quot;)
-
 #Plot result
 rpart.plot(modFitDT, main=&quot;Classification Tree&quot;, extra=102, under=TRUE, faclen=0)</code></pre>
 
-<p><img src="data:image/png;base64</p>
+
+  
 <p>Following confusion matrix shows the errors of the prediction algorithm.</p>
 <pre class="r"><code>confusionMatrix(predictDT, subTesting$classe)</code></pre>
 <pre><code>## Confusion Matrix and Statistics
