@@ -137,6 +137,9 @@ subTesting &lt;- training[-subSamples, ]</code></pre>
 <h3>Decision tree</h3>
 <pre class="r"><code># Fit model
 modFitDT &lt;- rpart(classe ~ ., data=subTraining, method=&quot;class&quot;)
+![alt text]( https://github.com/shiladityastat17/Machine_Learning_Random_Forest_Coursera_Project/blob/main/decisiontree-1.png?raw=true)
+
+
 
 #Perform prediction
 predictDT &lt;- predict(modFitDT, subTesting, type = &quot;class&quot;)
