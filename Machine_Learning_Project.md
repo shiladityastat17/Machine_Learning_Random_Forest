@@ -91,7 +91,7 @@ IsRpartPlotInstalled &lt;- require(&quot;rpart.plot&quot;)</code></pre>
     library(&quot;rpart.plot&quot;)
     }
 
-# Set seed for reproducability
+#Set seed for reproducability
 set.seed(9999)</code></pre>
 </div>
 <div id="data-processing" class="section level2">
@@ -102,13 +102,13 @@ set.seed(9999)</code></pre>
 download.file(training.url, training.file)
 download.file(test.cases.url,test.cases.file )
 
-# Clean data
+#Clean data
 training   &lt;-read.csv(training.file, na.strings=c(&quot;NA&quot;,&quot;#DIV/0!&quot;, &quot;&quot;))
 testing &lt;-read.csv(test.cases.file , na.strings=c(&quot;NA&quot;, &quot;#DIV/0!&quot;, &quot;&quot;))
 training&lt;-training[,colSums(is.na(training)) == 0]
 testing &lt;-testing[,colSums(is.na(testing)) == 0]
 
-# Subset data
+#Subset data
 training   &lt;-training[,-c(1:7)]
 testing &lt;-testing[,-c(1:7)]</code></pre>
 </div>
