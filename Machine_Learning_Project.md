@@ -127,6 +127,8 @@ subTesting &lt;- training[-subSamples, ]</code></pre>
 <p>The variable <code>classe</code> contains 5 levels. The plot of the outcome variable shows the frequency of each levels in the subTraining data.</p>
 <pre class="r"><code>plot(subTraining$classe, col=&quot;orange&quot;, main=&quot;Levels of the variable classe&quot;, xlab=&quot;classe levels&quot;, ylab=&quot;Frequency&quot;)</code></pre>
 
+<p><img src=" https://github.com/shiladityastat17/Machine_Learning_Random_Forest_Coursera_Project/blob/main/exploranalysis-1.png”/></p>
+
 <p>The plot above shows that Level A is the most frequent classe. D appears to be the least frequent one.</p>
 </div>
 <div id="prediction-models" class="section level2">
@@ -137,10 +139,13 @@ subTesting &lt;- training[-subSamples, ]</code></pre>
 <pre class="r"><code># Fit model
 modFitDT &lt;- rpart(classe ~ ., data=subTraining, method=&quot;class&quot;)
 
+
 #Perform prediction
 predictDT &lt;- predict(modFitDT, subTesting, type = &quot;class&quot;)
 #Plot result
 rpart.plot(modFitDT, main=&quot;Classification Tree&quot;, extra=102, under=TRUE, faclen=0)</code></pre>
+
+![alt text]( https://github.com/shiladityastat17/Machine_Learning_Random_Forest_Coursera_Project/blob/main/decisiontree-1.png?raw=true)
 
 
   
