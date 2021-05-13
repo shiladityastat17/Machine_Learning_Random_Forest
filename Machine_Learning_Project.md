@@ -107,7 +107,6 @@ training   &lt;-read.csv(training.file, na.strings=c(&quot;NA&quot;,&quot;#DIV/0
 testing &lt;-read.csv(test.cases.file , na.strings=c(&quot;NA&quot;, &quot;#DIV/0!&quot;, &quot;&quot;))
 training&lt;-training[,colSums(is.na(training)) == 0]
 testing &lt;-testing[,colSums(is.na(testing)) == 0]
-
 #Subset data
 training   &lt;-training[,-c(1:7)]
 testing &lt;-testing[,-c(1:7)]</code></pre>
@@ -127,7 +126,7 @@ subTesting &lt;- training[-subSamples, ]</code></pre>
 <h2>Exploratory analysis</h2>
 <p>The variable <code>classe</code> contains 5 levels. The plot of the outcome variable shows the frequency of each levels in the subTraining data.</p>
 <pre class="r"><code>plot(subTraining$classe, col=&quot;orange&quot;, main=&quot;Levels of the variable classe&quot;, xlab=&quot;classe levels&quot;, ylab=&quot;Frequency&quot;)</code></pre>
-<p><img src="data:image/png;base64</p>
+
 <p>The plot above shows that Level A is the most frequent classe. D appears to be the least frequent one.</p>
 </div>
 <div id="prediction-models" class="section level2">
